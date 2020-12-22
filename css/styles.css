@@ -1,0 +1,482 @@
+/* -------Base Styles------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #3a3a3a;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* Nav bar */
+.name {
+    color: rgb(5, 5, 59);
+    font-family: 'Oswald';
+    letter-spacing: 1.2px;
+    padding-top: 16px;
+    text-decoration: underline wavy;
+    text-transform: lowercase;
+}
+
+.skills {
+    background-color: rgb(252, 234, 232);
+    margin: 0 auto;
+    padding: 20px 0px 40px 20px;
+    text-align: left;
+
+
+}
+
+
+
+/* Text Styles */
+p {
+    font-size: .95em;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.header h2 {
+    font-family: 'Work Sans';
+    font-size: 2em;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: none;
+}
+
+h2,
+h4 {
+
+    letter-spacing: 2px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(255, 255, 255)
+}
+
+.skills h4 {
+    color: rgb(253, 125, 93);
+    font-size: 1.9em;
+    text-align: center;
+    padding-left: 0;
+}
+
+.skills li {
+    list-style: square;
+}
+
+/* Contact Section */
+
+.contact {
+    font-size: 1.4em;
+    background-image: linear-gradient(rgb(235, 235, 235), rgb(255, 255, 255));
+    color: #353535;
+}
+
+
+.contact a {
+    color: rgb(247, 135, 44);
+}
+
+.contact a:hover {
+    color: rgb(0, 47, 255);
+    text-decoration: underline wavy;
+}
+
+.contact h4 {
+    color: rgb(64, 80, 223);
+    font-size: 1.4em;
+}
+
+/* Separation line Style */
+hr {
+    border-color: rgb(247, 247, 247);
+    width: 90%;
+}
+
+/* Footer elements */
+
+.name2 {
+    color: rgb(5, 5, 59);
+    font-family: 'Oswald';
+    text-transform: lowercase;
+    letter-spacing: 1.2px;
+    text-decoration: underline wavy;
+    padding-top: 16px;
+}
+
+/* -------Base Layout Styles------- */
+
+/* Nav bar */
+.main-nav li {
+    text-align: center;
+    background: #fff;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: block;
+    padding: 15px;
+}
+
+.name {
+    background: #fdfdfd;
+    text-align: center;
+    display: block;
+}
+
+.main-nav {
+    background-color: #ffffff;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ---- Layout Containers ---- */
+
+.nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.header p {
+    padding: 1.2em;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    padding-top: 1.8em;
+}
+
+
+div img {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.contact {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+
+}
+
+.nav2 {
+    display: none;
+
+
+
+}
+
+.footer-nav {
+    clear: both;
+    width: 100%;
+
+
+}
+
+.name2 {
+    font-family: 'Oswald';
+    text-transform: lowercase;
+    display: inline-block;
+    vertical-align: baseline;
+
+}
+
+.back {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin-top: 44px;
+
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+
+    .main-nav {
+        display: table;
+        /* Allow the centering to work */
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .main-nav li {
+        text-align: center;
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .header {
+        width: 100%;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .header h2 {
+
+        font-size: 1.8em;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .header p {
+        text-align: left;
+        width: 60%;
+        padding-top: 0px;
+        display: inline-block;
+    }
+
+    .profilepic {
+        width: 40%;
+        float: right;
+        display: inline-block;
+        padding-left: 15px;
+        clear: right;
+    }
+
+    .container {
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .marketing {
+        float: left;
+        width: 50%;
+    }
+
+    .search {
+        float: right;
+        width: 50%;
+    }
+
+    .travel {
+        float: left;
+        width: 50%;
+    }
+
+    .sports {
+        float: right;
+        width: 50%;
+    }
+
+    .gallery {
+        float: left;
+        width: 50%;
+    }
+
+    .calculator {
+        float: right;
+        width: 50%;
+    }
+
+    .skills {
+        overflow: hidden;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .list1 {
+        float: left;
+        width: 50%;
+        padding-left: 9em;
+    }
+
+    .list2 {
+        float: right;
+        width: 50%;
+        padding-right: 6em;
+    }
+
+    .contact {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+
+    }
+
+    .nav2 {
+        display: inline-block;
+        float: right;
+        overflow: auto;
+        text-align: right;
+
+    }
+
+    .nav2 li {
+        display: inline-block;
+        padding: 10px;
+
+    }
+
+    .name2 {
+        padding-top: 0px;
+    }
+
+    .back {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .main-nav {
+        width: 100%;
+        overflow: auto;
+        margin: 0 auto;
+    }
+
+    .main-nav a {
+        float: left;
+        padding: 12px;
+        width: 25%;
+        text-align: center;
+    }
+
+    .name {
+        display: inline-block;
+        float: left;
+        margin: 0 auto;
+        margin-left: 2em
+    }
+
+    .nav {
+        display: inline-block;
+        float: right;
+        width: 60%;
+        text-align: right;
+
+
+
+    }
+
+    .header {
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .header h2 {
+
+        font-size: 3em;
+        padding-left: 8px;
+        text-align: left;
+    }
+
+    .header p {
+        font-size: 1.2em;
+        padding-left: 1.2em;
+        margin-bottom: 6em;
+
+    }
+
+    .container p {
+        padding: 16px;
+    }
+
+    .marketing {
+        width: 33.3%;
+
+    }
+
+    .search {
+        width: 33.3%;
+    }
+
+    .travel {
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .sports {
+        width: 33.3%;
+    }
+
+    .gallery {
+        width: 33.3%;
+    }
+
+    .calculator {
+        width: 33.3%;
+    }
+
+    .contact p {
+        padding-left: 10em;
+        padding-right: 10em;
+        margin-top: 0;
+
+    }
+
+    .skills {
+        overflow: hidden;
+        padding: 40px 0px 60px 0px;
+    }
+
+    .list1 {}
+
+    .list2 {}
+
+    footer {
+        margin: 0 auto;
+    }
+
+    .name2 {
+        padding: 0;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+}
